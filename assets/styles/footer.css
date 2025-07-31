@@ -1,0 +1,132 @@
+#footer {
+  height: 26rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10rem;
+
+  background-image: url(../images/book-trace-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  background-color: var(--shape-base);
+
+  & h4 {
+    color: var(--text-body);
+    margin-bottom: 1.25rem;
+  }
+
+  & .link {
+    color: var(--blue-light);
+
+    &:hover {
+      color: var(--text-body);
+    }
+  }
+
+  & .brand {
+    max-width: 16.5rem;
+
+    & .social-links {
+      display: flex;
+      justify-content: space-between;
+
+      & .social-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: transparent;
+        border-radius: 50%;
+        transition: background-color 500ms;
+
+        & .social-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: background-image 400ms;
+        }
+
+        &:hover {
+          background-color: var(--shape-stroke);
+        }
+      }
+
+      & .social-card:nth-child(1) {
+        & .social-icon {
+          background-image: url(../icons/instagram.svg);
+
+          &:hover {
+            background-image: url(../icons/instagram-hover.svg);
+          }
+        }
+      }
+
+      & .social-card:nth-child(2) {
+        & .social-icon {
+          background-image: url(../icons/twitter.svg);
+
+          &:hover {
+            background-image: url(../icons/twitter-hover.svg);
+          }
+        }
+      }
+
+      & .social-card:nth-child(3) {
+        & .social-icon {
+          background-image: url(../icons/facebook.svg);
+
+          &:hover {
+            background-image: url(../icons/facebook-hover.svg);
+          }
+        }
+      }
+
+      & .social-card:nth-child(4) {
+        & .social-icon {
+          background-image: url(../icons/discord.svg);
+
+          &:hover {
+            background-image: url(../icons/discord-hover.svg);
+          }
+        }
+      }
+
+      & .social-card:nth-child(5) {
+        & .social-icon {
+          background-image: url(../icons/whatsapp.svg);
+
+          &:hover {
+            background-image: url(../icons/whatsapp-hover.svg);
+          }
+        }
+      }
+
+      & .social-card:nth-child(6) {
+        & .social-icon {
+          background-image: url(../icons/mail.svg);
+
+          &:hover {
+            background-image: url(../icons/mail-hover.svg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 880px) {
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 2rem;
+
+    & .brand {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

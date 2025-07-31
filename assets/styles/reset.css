@@ -1,0 +1,115 @@
+/* ===== RESET GLOBAL ===== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-family-base, sans-serif);
+  font-size: 100%; /* 16px padrão */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #fff;
+  color: #000;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Remove estilos padrão de headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove estilos padrão de parágrafos */
+p {
+  font: inherit;
+}
+
+/* Listas sem estilo */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links limpos */
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+/* Botões e inputs sem estilos nativos */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+/* Cursor pointer em botões */
+button {
+  cursor: pointer;
+}
+
+/* Imagens responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Tabelas limpas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove itálico automático em address/cite */
+address,
+cite,
+em,
+i {
+  font-style: normal;
+}
+
+/* Strong sem negrito automático */
+strong,
+b {
+  font-weight: inherit;
+}
+
+/* Forms sem decoração padrão */
+fieldset,
+legend {
+  border: none;
+}
+
+/* Placeholder consistente */
+::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}

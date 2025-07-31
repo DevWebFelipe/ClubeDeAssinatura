@@ -1,0 +1,7 @@
+#pricing {
+  background-image: url(../images/pricing-background.png);
+  background-color: var(--shape-base);
+
+  background-size: contain;
+  height: 50vh;
+}
