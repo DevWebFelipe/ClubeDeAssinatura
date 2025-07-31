@@ -1,6 +1,5 @@
 body {
-  background: radial-gradient(circle at center, #170222 0%, #0c0013 100%);
-  /* background: radial-gradient(circle at center, #2d0c3f 0%, #150320 100%); */
+  background-color: black;
 }
 
 .container {
