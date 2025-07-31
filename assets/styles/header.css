@@ -1,20 +1,10 @@
 #header {
   background-image: radial-gradient(
-      ellipse at center,
-      #11001b6e 60%,
+    ellipse at center,
+    #11001b6e 60%,
 
-      #2c024273 100%
-    ),
-    url(../images/hero-background.png);
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: auto;
-  aspect-ratio: 1440 / 948;
-  padding-inline: 10rem;
-  padding-top: 3.5rem;
-  margin-bottom: 6rem;
+    #2c024273 100%
+  );
 
   animation: fadeInHeader 3s ease forwards;
 
@@ -25,6 +15,21 @@
     background-position: top center;
     height: 3.625rem;
     width: 14.375rem;
+  }
+
+  & #title-container {
+    background-image: url(../images/hero-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    aspect-ratio: 1440 / 948;
+
+    height: auto;
+
+    padding-inline: 10rem;
+    padding-top: 3.5rem;
+
+    width: 100%;
   }
 
   & .title {
@@ -72,9 +77,6 @@
 
 @media (width <= 1100px) {
   #header {
-    padding-inline: 1.25rem;
-    padding-top: 1.25rem;
-
     & .title {
       margin: 3rem auto;
 
@@ -91,23 +93,21 @@
   }
 }
 
-@media (width <= 600px) {
+@media (width <= 760px) {
   #header {
-    background-image: url(../images/hero-background-mobile.png);
-    padding-inline: 1.25rem;
-    padding-top: 1.25rem;
-    aspect-ratio: 800 / 948;
+    & #title-container {
+      padding-inline: 1.25rem;
+      padding-top: 1.25rem;
+    }
 
-    & .title {
-      margin: 3rem auto;
+    & .title h1 {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
 
-      & span {
-        font-size: 0.75rem;
-      }
-
-      & h1 {
-        font-size: 1.75rem;
-        line-height: 1;
+    & #intro {
+      & p {
+        font-size: 1rem;
       }
     }
 
@@ -115,6 +115,22 @@
       background-image: url(../icons/logo-symbol.svg);
       height: 3rem;
       width: 4.03rem;
+    }
+  }
+}
+
+@media (width <= 600px) {
+  #header {
+    & #title-container {
+      aspect-ratio: 800 / 948;
+    }
+
+    & .title {
+      margin: 3rem auto;
+
+      & span {
+        font-size: 0.75rem;
+      }
     }
   }
 }

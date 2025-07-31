@@ -48,6 +48,10 @@
 
 /* Typography Styles */
 
+.text-highlight {
+  color: var(--blue-light);
+}
+
 .title-lg {
   font-family: var(--font-family-base);
   font-size: var(--title-lg-size);
