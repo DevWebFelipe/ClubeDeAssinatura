@@ -12,7 +12,9 @@
     scale: 0;
   }
 
-  & p {
+  & p .intro-1,
+  & p .intro-2,
+  & p .intro-3 {
     opacity: 0.5;
 
     & .text-highlight {
@@ -26,7 +28,9 @@
       scale: 1;
     }
 
-    & p {
+    & p .intro-1,
+    & p .intro-2,
+    & p .intro-3 {
       opacity: 1;
 
       & .text-highlight {
@@ -34,6 +38,43 @@
       }
     }
   }
+}
+
+#intro p .intro-1,
+#intro p .intro-2,
+#intro p .intro-3 {
+  opacity: 0.5;
+  transition: all 500ms ease;
+  transition-delay: 0s; /* SEM delay na saída */
+
+  & .text-highlight {
+    color: var(--text-body);
+    transition: color 500ms ease;
+  }
+}
+
+#intro:hover p .intro-1 {
+  transition-delay: 0s;
+}
+#intro:hover p .intro-2 {
+  transition-delay: 0.5s;
+}
+#intro:hover p .intro-3 {
+  transition-delay: 1s;
+}
+
+#intro img {
+  opacity: 0;
+  scale: 0;
+  transition: all 500ms ease;
+  transition-delay: 0s; /* sem delay na saída */
+}
+
+#intro:hover img:nth-child(1) {
+}
+#intro:hover img:nth-child(2) {
+}
+#intro:hover img:nth-child(3) {
 }
 
 #intro img:nth-child(1),
@@ -44,7 +85,6 @@
 
 #intro img:nth-child(1) {
   transform: rotate(15deg);
-  transition: all 500ms ease;
 
   &:hover {
     transform: rotate(30deg) scale(1.1);
@@ -53,7 +93,6 @@
 
 #intro img:nth-child(2) {
   transform: rotate(105deg);
-  transition: all 500ms ease;
 
   &:hover {
     transform: rotate(120deg) scale(1.1);
@@ -61,8 +100,7 @@
 }
 
 #intro img:nth-child(3) {
-  transform: rotate(-20deg);
-  transition: all 500ms ease;
+  transform: rotate(-15deg);
   height: 4.5rem;
   width: 4.5rem;
 
