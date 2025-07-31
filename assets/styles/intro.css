@@ -9,6 +9,7 @@
 
   & img {
     opacity: 0;
+    scale: 0;
   }
 
   & p {
@@ -22,6 +23,7 @@
   &:hover {
     & img {
       opacity: 1;
+      scale: 1;
     }
 
     & p {
@@ -32,60 +34,40 @@
       }
     }
   }
+}
 
-  & img:nth-child(1),
-  & img:nth-child(2) {
-    height: 5rem;
-    width: 5rem;
-  }
+#intro img:nth-child(1),
+#intro img:nth-child(2) {
+  height: 5rem;
+  width: 5rem;
+}
 
-  & img:nth-child(1) {
-    transform: rotate(15deg);
-    transition: transform 500ms ease;
+#intro img:nth-child(1) {
+  transform: rotate(15deg);
+  transition: all 500ms ease;
 
-    &:hover {
-      transform: rotate(30deg) scale(1.1);
-    }
-  }
-
-  & img:nth-child(2) {
-    transform: rotate(105deg);
-    transition: transform 500ms ease;
-
-    &:hover {
-      transform: rotate(120deg) scale(1.1);
-    }
-  }
-
-  & img:nth-child(3) {
-    transform: rotate(-20deg);
-    transition: transform 500ms ease;
-    height: 4.5rem;
-    width: 4.5rem;
-
-    &:hover {
-      transform: rotate(-5deg) scale(1.1);
-    }
+  &:hover {
+    transform: rotate(30deg) scale(1.1);
   }
 }
 
-@keyframes introInOut {
-  33% {
-    #intro .subtitle .intro-1 {
-      opacity: 1;
-    }
-  }
+#intro img:nth-child(2) {
+  transform: rotate(105deg);
+  transition: all 500ms ease;
 
-  66% {
-    #intro .subtitle .intro-2 {
-      opacity: 1;
-    }
+  &:hover {
+    transform: rotate(120deg) scale(1.1);
   }
+}
 
-  100% {
-    #intro .subtitle .intro-3 {
-      opacity: 1;
-    }
+#intro img:nth-child(3) {
+  transform: rotate(-20deg);
+  transition: all 500ms ease;
+  height: 4.5rem;
+  width: 4.5rem;
+
+  &:hover {
+    transform: rotate(-5deg) scale(1.1);
   }
 }
 
