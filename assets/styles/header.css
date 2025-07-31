@@ -1,6 +1,5 @@
 #header {
   background-image: url(../images/hero-background.png);
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -8,15 +7,15 @@
   aspect-ratio: 1440 / 948;
   padding-inline: 10rem;
   padding-top: 3.5rem;
-
   margin-bottom: 6rem;
+
+  animation: fadeInHeader 3s ease forwards;
 
   & .img-logo {
     background-image: url(../icons/logo-horizontal.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
     height: 3.625rem;
     width: 14.375rem;
   }
@@ -27,11 +26,39 @@
 
     & h1 {
       color: var(--text-title);
+      opacity: 0;
+      animation: fadeInHeader 2s ease forwards;
     }
 
     & span {
       color: var(--text-body);
+      opacity: 0;
+      animation: fadeInStages 2s ease 1s forwards;
     }
+  }
+}
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInStages {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.25;
+  }
+  60% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
