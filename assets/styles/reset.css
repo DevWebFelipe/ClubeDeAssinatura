@@ -17,8 +17,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background-color: #fff;
-  color: #000;
+
+  background: radial-gradient(circle at center, #2d0c3f 0%, #150320 100%);
 }
 
 body {
@@ -73,12 +73,9 @@ button {
 }
 
 /* Imagens responsivas */
-img,
-picture,
-video,
-canvas,
-svg {
+img {
   max-width: 100%;
+  height: auto; /* ← Garante proporção correta */
   display: block;
 }
 

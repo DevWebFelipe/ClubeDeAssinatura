@@ -1,16 +1,11 @@
-/* ============================= */
-/*           CONTAINERS         */
-/* ============================= */
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+body {
+  background-color: black;
 }
 
-/* ============================= */
-/*            GRID              */
-/* ============================= */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .grid {
   display: grid;
@@ -31,10 +26,6 @@
     grid-template-columns: 1fr;
   }
 }
-
-/* ============================= */
-/*         SEÇÃO PADRÃO         */
-/* ============================= */
 
 .section {
   padding: var(--spacing-lg) 0;

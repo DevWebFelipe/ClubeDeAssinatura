@@ -1,0 +1,56 @@
+#header {
+  background-image: url(../images/hero-background.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: auto;
+  aspect-ratio: 1440 / 948;
+  padding-inline: 10rem;
+  padding-top: 3.5rem;
+
+  margin-bottom: 6rem;
+
+  & .img-logo {
+    background-image: url(../icons/logo-horizontal.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    height: 3.625rem;
+    width: 14.375rem;
+  }
+
+  & .title {
+    max-width: 41rem;
+    margin: 10rem auto;
+
+    & h1 {
+      color: var(--text-title);
+    }
+
+    & span {
+      color: var(--text-body);
+    }
+  }
+}
+
+@media (width <= 1100px) {
+  #header {
+    padding-inline: 1.25rem;
+    padding-top: 1.25rem;
+  }
+}
+
+@media (width <= 480px) {
+  #header {
+    padding-inline: 1.25rem;
+    padding-top: 1.25rem;
+
+    & .img-logo {
+      background-image: url(../icons/logo-symbol.svg);
+      height: 3rem;
+      width: 4.03rem;
+    }
+  }
+}
