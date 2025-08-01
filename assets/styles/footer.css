@@ -37,19 +37,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         width: 2.5rem;
         height: 2.5rem;
-        background-color: transparent;
-        border-radius: 50%;
-        transition: background-color 500ms;
 
-        & .social-icon {
-          width: 1.5rem;
-          height: 1.5rem;
-          background-repeat: no-repeat;
-          background-size: cover;
-          transition: background-image 400ms;
-        }
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 50%;
+        transition: all 500ms;
 
         &:hover {
           background-color: var(--shape-stroke);
@@ -57,62 +54,50 @@
       }
 
       & .social-card:nth-child(1) {
-        & .social-icon {
-          background-image: url(../icons/instagram.svg);
+        background-image: url(../icons/instagram.svg);
 
-          &:hover {
-            background-image: url(../icons/instagram-hover.svg);
-          }
+        &:hover {
+          background-image: url(../icons/instagram-hover.svg);
         }
       }
 
       & .social-card:nth-child(2) {
-        & .social-icon {
-          background-image: url(../icons/twitter.svg);
+        background-image: url(../icons/twitter.svg);
 
-          &:hover {
-            background-image: url(../icons/twitter-hover.svg);
-          }
+        &:hover {
+          background-image: url(../icons/twitter-hover.svg);
         }
       }
 
       & .social-card:nth-child(3) {
-        & .social-icon {
-          background-image: url(../icons/facebook.svg);
+        background-image: url(../icons/facebook.svg);
 
-          &:hover {
-            background-image: url(../icons/facebook-hover.svg);
-          }
+        &:hover {
+          background-image: url(../icons/facebook-hover.svg);
         }
       }
 
       & .social-card:nth-child(4) {
-        & .social-icon {
-          background-image: url(../icons/discord.svg);
+        background-image: url(../icons/discord.svg);
 
-          &:hover {
-            background-image: url(../icons/discord-hover.svg);
-          }
+        &:hover {
+          background-image: url(../icons/discord-hover.svg);
         }
       }
 
       & .social-card:nth-child(5) {
-        & .social-icon {
-          background-image: url(../icons/whatsapp.svg);
+        background-image: url(../icons/whatsapp.svg);
 
-          &:hover {
-            background-image: url(../icons/whatsapp-hover.svg);
-          }
+        &:hover {
+          background-image: url(../icons/whatsapp-hover.svg);
         }
       }
 
       & .social-card:nth-child(6) {
-        & .social-icon {
-          background-image: url(../icons/mail.svg);
+        background-image: url(../icons/mail.svg);
 
-          &:hover {
-            background-image: url(../icons/mail-hover.svg);
-          }
+        &:hover {
+          background-image: url(../icons/mail-hover.svg);
         }
       }
     }
