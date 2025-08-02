@@ -1,0 +1,98 @@
+#kit-month {
+  background-image: radial-gradient(
+    ellipse at center,
+    #11001b6e 40%,
+    #00000073 100%,
+    #2c024273 40%,
+    #00000073 100%
+  );
+
+  padding-bottom: 17.375rem;
+
+  & h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding-top: 14.5rem;
+
+    color: var(--text-title);
+
+    & img {
+      width: 2rem;
+      height: auto;
+    }
+  }
+
+  & span {
+    color: var(--text-body);
+    display: block;
+    text-align: center;
+
+    margin-bottom: 5rem;
+  }
+
+  & .images {
+    position: relative;
+    z-index: 5;
+
+    & .book {
+      width: 33%;
+      height: auto;
+      margin-top: 8.375rem;
+
+      margin-inline: auto;
+
+      z-index: 5;
+    }
+
+    & .book-purple,
+    & .book-yellow {
+      width: 12.2%;
+      height: 85%;
+
+      position: absolute;
+
+      top: 12%;
+      left: 54.89%;
+
+      transition: all 500ms ease;
+    }
+
+    & .book-pin {
+      width: 15.3%;
+      height: auto;
+
+      position: absolute;
+
+      top: 53.15%;
+      left: 36.85%;
+
+      transition: all 500ms ease;
+    }
+
+    & .book-purple {
+      z-index: -2;
+    }
+
+    & .book-yellow,
+    & .book-pin {
+      z-index: -1;
+    }
+
+    &:hover {
+      & .book-purple {
+        transform: translateX(120%) translateY(-5%) rotate(20deg);
+      }
+
+      & .book-yellow {
+        transform: translateX(60.5%) translateY(-25%) rotate(10deg);
+      }
+
+      & .book-pin {
+        transform: translateX(-81%) translateY(48%) rotate(-10deg);
+      }
+    }
+  }
+}

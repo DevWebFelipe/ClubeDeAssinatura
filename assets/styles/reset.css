@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   font-family: var(--font-family-base, sans-serif);
-  font-size: 100%; /* 16px padrão */
+  font-size: 100%; /* 1rem padrão */
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -3,43 +3,43 @@
   --font-family-base: "Raleway", sans-serif;
 
   /* Titles */
-  --title-lg-size: 48px;
-  --title-md-size: 40px;
-  --title-sm-size: 32px;
-  --title-xs-size: 16px;
+  --title-lg-size: 3rem;
+  --title-md-size: 2.5rem;
+  --title-sm-size: 2rem;
+  --title-xs-size: 1rem;
   --title-line-height: auto;
   --title-weight: bold;
   --title-letter-spacing: 0%;
 
   /* Subtitle */
-  --subtitle-size: 32px;
+  --subtitle-size: 2rem;
   --subtitle-line-height: 200%;
   --subtitle-weight: 500; /* Medium */
   --subtitle-letter-spacing: 0%;
 
   /* Body Text */
-  --body-lg-size: 20px;
-  --body-md-size: 16px;
-  --body-sm-size: 14px;
-  --body-xs-size: 12px;
+  --body-lg-size: 1.25rem;
+  --body-md-size: 1rem;
+  --body-sm-size: 0.875rem;
+  --body-xs-size: 0.75rem;
   --body-line-height: 140%;
   --body-weight: 400 700; /* Regular & Bold */
   --body-letter-spacing: 0%;
 
   /* Button */
-  --button-size: 14px;
+  --button-size: 0.875rem;
   --button-line-height: auto;
   --button-weight: bold;
   --button-letter-spacing: 0%;
 
   /* Link */
-  --link-size: 14px;
+  --link-size: 0.875rem;
   --link-line-height: auto;
   --link-weight: 500; /* Medium */
   --link-letter-spacing: 0%;
 
   /* Tag */
-  --tag-size: 10px;
+  --tag-size: 0.625rem;
   --tag-line-height: auto;
   --tag-weight: bold;
   --tag-letter-spacing: 5%;

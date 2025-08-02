@@ -1,4 +1,3 @@
-
 # 📘 Guia de Boas Práticas – Projeto Web
 
 Este guia serve como referência rápida para organização, semântica, boas práticas de CSS e estrutura de código.
@@ -73,20 +72,20 @@ project/
   --background-color: #f8f9fa;
 
   /* === Typography === */
-  --font-family-base: 'Inter', sans-serif;
-  --font-size-base: 16px;
+  --font-family-base: "Inter", sans-serif;
+  --font-size-base: 1rem;
 
   /* === Spacing === */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 32px;
-  --spacing-xl: 64px;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
 
   /* === Border Radius === */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
 }
 ```
 
@@ -102,15 +101,15 @@ project/
 
 ## 🧩 Organização dos CSS por Arquivo
 
-| Arquivo         | Responsabilidade                                   |
-|-----------------|----------------------------------------------------|
-| `index.css`     | Centraliza os imports de todos os outros CSS       |
-| `variables.css` | Variáveis globais de cor, espaçamento, etc         |
-| `global.css`    | Reset básico, fonte base, estilos universais       |
-| `layout.css`    | Containers, grids, espaçamento entre sections      |
-| `buttons.css`   | Tipos de botões, hover, variações (primário/sec.)  |
-| `header.css`    | Estilo da navegação, responsividade, menu          |
-| `footer.css`    | Estilo do rodapé, links e redes sociais            |
+| Arquivo         | Responsabilidade                                           |
+| --------------- | ---------------------------------------------------------- |
+| `index.css`     | Centraliza os imports de todos os outros CSS               |
+| `variables.css` | Variáveis globais de cor, espaçamento, etc                 |
+| `global.css`    | Reset básico, fonte base, estilos universais               |
+| `layout.css`    | Containers, grids, espaçamento entre sections              |
+| `buttons.css`   | Tipos de botões, hover, variações (primário/sec.)          |
+| `header.css`    | Estilo da navegação, responsividade, menu                  |
+| `footer.css`    | Estilo do rodapé, links e redes sociais                    |
 | `sections.css`  | Estilos específicos de seções como "Sobre", "Serviços" etc |
 
 ---
