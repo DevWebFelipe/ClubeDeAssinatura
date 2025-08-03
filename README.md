@@ -1,131 +1,75 @@
-# 📘 Guia de Boas Práticas – Projeto Web
+# Clube de Assinatura 💳📦
 
-Este guia serve como referência rápida para organização, semântica, boas práticas de CSS e estrutura de código.
+Interface moderna e responsiva para apresentação de planos de um clube de assinatura, desenvolvida com foco em animações suaves, responsividade e efeitos visuais com CSS puro.
 
----
+<img width="1287" height="842" alt="image" src="https://github.com/user-attachments/assets/419c9460-5b63-456d-a001-a0808b656f0c" />
 
-## 🗂️ Estrutura de Pastas (Base)
+## 🔍 Visão Geral
 
-```
-project/
-├── .vscode/                 → Configurações do VSCode (opcional)
-├── assets/
-│   ├── images/              → Imagens do projeto (JPG, PNG, SVG decorativo)
-│   ├── icons/               → Ícones vetoriais ou de interface
-│   ├── fonts/               → Fontes externas (opcional)
-│   ├── styles/              → Arquivos CSS
-│   │   ├── index.css        → Centraliza todos os @imports
-│   │   ├── variables.css    → Cores, fontes, espaçamentos
-│   │   ├── global.css       → Reset, tipografia, elementos base
-│   │   ├── layout.css       → Containers, grids e seções
-│   │   ├── buttons.css      → Estilos de botões
-│   │   ├── header.css       → Estilo do header
-│   │   ├── footer.css       → Estilo do footer
-│   │   └── sections.css     → Estilos gerais das sections
-│   └── scripts/
-│       └── main.js          → Script principal
-├── index.html               → Página principal
-├── README.md                → Descrição geral do projeto
-└── guia-do-projeto.md       → Este guia
-```
+Este projeto foi criado como parte do meu portfólio, com o objetivo de explorar:
+
+- Layouts modernos com **CSS Grid** e **Flexbox**
+- Animações e transições usando `@keyframes` e `transition`
+- Scroll horizontal com snap responsivo
+- Estilização e interatividade sem dependência de frameworks
+
+A ideia é oferecer uma vitrine visual para diferentes planos de assinatura, com destaque para o plano principal, foco nos detalhes de preços e responsividade mobile.
 
 ---
 
-## 🧱 Estrutura Básica do HTML Semântico
+## 🚀 Tecnologias Utilizadas
 
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Título do Projeto</title>
-    <link rel="stylesheet" href="assets/styles/index.css" />
-  </head>
-  <body>
-    <header id="header"></header>
-
-    <main>
-      <section id="hero"></section>
-      <section id="about"></section>
-      <section id="services"></section>
-      <section id="contact"></section>
-    </main>
-
-    <footer id="footer"></footer>
-
-    <script src="assets/scripts/main.js"></script>
-  </body>
-</html>
-```
+- HTML5
+- CSS3 (sem preprocessadores)
+- Animações com `@keyframes` e `transition`
+- Responsividade com media queries
 
 ---
 
-## 🎨 Variáveis CSS
+## 📱 Responsividade
 
-```css
-:root {
-  /* === Colors === */
-  --primary-color: #0d6efd;
-  --secondary-color: #6c757d;
-  --text-color: #212529;
-  --background-color: #f8f9fa;
+O layout foi cuidadosamente ajustado para funcionar bem em:
 
-  /* === Typography === */
-  --font-family-base: "Inter", sans-serif;
-  --font-size-base: 1rem;
-
-  /* === Spacing === */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 4rem;
-
-  /* === Border Radius === */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-}
-```
+- **Dispositivos móveis:** scroll horizontal com `scroll-snap-type`
+- **Tablets:** espaçamento otimizado e animações visuais adaptadas
+- **Desktops:** cards animados e planos destacados
 
 ---
 
-## 📏 Padrão de Espaçamento
+🎯 Funcionalidades
+Destaque automático do plano principal
 
-- Margens/paddings com `var(--spacing-md)` por padrão
-- Seções com `padding: var(--spacing-lg) 0;`
-- Componentes internos com `spacing-sm` ou `spacing-md`
+Scroll horizontal com snapping suave em mobile
 
----
+Animações nos cards secundários com efeito de deslocamento
 
-## 🧩 Organização dos CSS por Arquivo
+Destaque visual em preços com formatação personalizada
 
-| Arquivo         | Responsabilidade                                           |
-| --------------- | ---------------------------------------------------------- |
-| `index.css`     | Centraliza os imports de todos os outros CSS               |
-| `variables.css` | Variáveis globais de cor, espaçamento, etc                 |
-| `global.css`    | Reset básico, fonte base, estilos universais               |
-| `layout.css`    | Containers, grids, espaçamento entre sections              |
-| `buttons.css`   | Tipos de botões, hover, variações (primário/sec.)          |
-| `header.css`    | Estilo da navegação, responsividade, menu                  |
-| `footer.css`    | Estilo do rodapé, links e redes sociais                    |
-| `sections.css`  | Estilos específicos de seções como "Sobre", "Serviços" etc |
+📸 Demonstração
+Você pode visualizar o projeto online através do GitHub Pages:
 
----
+🔗 Acesse aqui
 
-## 📛 Convenções de Nomeclatura
+🧠 Aprendizados
+Durante o desenvolvimento, aprofundei conhecimentos em:
 
-- Pastas/arquivos: minúsculo, sem espaço, em inglês, plural e sem abreviações
-- Classes e IDs: em inglês, padrão kebab-case (ex: `.section-title`)
-- Classes para estilo, IDs apenas para navegação ou âncoras
+Controle fino de animações
 
----
+Uso de scroll-snap para UX mobile
 
-## ✅ Boas Práticas Gerais
+Equilíbrio entre design fixo e responsivo
 
-- ✅ Use `index.css` como centralizador com `@import`
-- ✅ Evite abreviações em pastas/arquivos
-- ✅ Comente para organizar blocos em CSS
-- ✅ Prefira legibilidade e clareza
-- ✅ Use esta estrutura em todos os projetos para manter padrão
+Organização de layout com Grid mantendo escalabilidade
+
+🙋‍♂️ Sobre o Autor
+
+Feito com dedicação por Felipe Texeira
+
+🌐 Portfólio: [https://devwebfelipe.github.io/PortifolioDev/]
+
+📬 Email: felipe.flptxr@gmail.com
+
+🐙 GitHub: @DevWebFelipe
+
+📄 Licença
+Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar!
