@@ -1,9 +1,10 @@
 #pricing {
   background-image: radial-gradient(
     circle at bottom,
-    #000714e1 20%,
-    #01050a6e 60%,
-    #00000062 100%
+    #000714e1 40%,
+    #01050a6e 75%,
+    #10001344 97%,
+    black 100%
   );
 
   padding-bottom: 10rem;
@@ -203,15 +204,22 @@
         transition: all 500ms;
       }
 
-      &:hover {
+      &.reveal {
         & article:nth-child(1) {
-          animation: monthPlanCard forwards;
-          animation-duration: 500ms;
+          background-color: var(--shape-base);
+          transform: translateX(-107%) rotate(-8deg) translateY(12%);
+          z-index: 2;
         }
 
         & article:nth-child(2) {
-          animation: annualPlanCard forwards;
-          animation-duration: 500ms;
+          background-color: var(--shape-base);
+          transform: translateX(107%) rotate(8deg) translateY(12%);
+          z-index: 2;
+        }
+
+        & article:nth-child(3) {
+          background-color: var(--shape-base);
+          z-index: 3;
         }
 
         & article:hover {
@@ -256,18 +264,48 @@
 }
 
 @media (max-width: 768px) {
-  #pricing .plans {
+  #pricing .pricing-container .plans-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+    /* garante que o wrapper tenha largura para scroll */
+    width: 100%;
+    padding-inline: 2rem;
+    padding-block: 5rem;
+  }
+
+  #pricing .pricing-container .plans-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  #pricing .pricing-container .plans {
+    padding-inline: 2rem;
+
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    gap: 10rem;
-    padding-inline: 1rem;
+    gap: 2rem;
     position: static;
+    max-width: unset;
+    max-height: unset;
+    margin: 0;
+  }
 
-    & article {
-      position: relative !important;
-      transform: none !important;
-      flex-shrink: 0;
-    }
+  #pricing .pricing-container .plans article {
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  #pricing .pricing-container .plans article:nth-child(1) {
+    margin-left: 2rem;
+  }
+
+  #pricing .pricing-container .plans article:nth-child(1),
+  #pricing .pricing-container .plans article:nth-child(2),
+  #pricing .pricing-container .plans article:nth-child(3) {
+    left: 0 !important;
+    transform: none !important;
   }
 }

@@ -1,16 +1,31 @@
-const cards = document.querySelectorAll(".plans article")
-let principal = document.querySelector(".plans article:nth-child(3)")
+document.addEventListener("DOMContentLoaded", () => {
+  const plans = document.querySelector(".plans")
+  const mainCard = plans.querySelector("article:nth-child(3)")
+  const cards = plans.querySelectorAll("article")
+  let revealed = false
 
-cards.forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    if (card !== principal) {
-      principal.style.backgroundColor = "var(--shape-base)"
+  plans.addEventListener("mouseenter", () => {
+    if (!revealed) {
+      plans.classList.add("reveal")
+      revealed = true
     }
   })
 
-  card.addEventListener("mouseleave", () => {
-    if (card === principal) {
-      principal.style.backgroundColor = "var(--shape-hover)"
+  cards.forEach((card, index) => {
+    if (index !== 2) {
+      card.addEventListener("mouseenter", () => {
+        mainCard.style.backgroundColor = "var(--shape-base)"
+      })
+    } else {
+      card.addEventListener("mouseenter", () => {
+        mainCard.style.backgroundColor = "var(--shape-hover)"
+      })
+
+      card.addEventListener("mouseleave", () => {
+        if (plans.classList.contains("reveal")) {
+          mainCard.style.backgroundColor = "var(--shape-base)"
+        }
+      })
     }
   })
 })
