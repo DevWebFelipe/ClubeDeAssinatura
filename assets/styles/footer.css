@@ -108,9 +108,11 @@
 
 @media (width <= 880px) {
   #footer {
-    flex-direction: column;
-    justify-content: center;
-    padding-inline: 2rem;
+    & .footer-container {
+      flex-direction: column;
+      justify-content: center;
+      padding-inline: 2rem;
+    }
 
     & .brand {
       margin-bottom: 2.5rem;

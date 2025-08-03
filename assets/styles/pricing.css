@@ -179,6 +179,10 @@
 
       & article {
         position: absolute;
+
+        & > img {
+          transition: transform 500ms ease;
+        }
       }
 
       & article:nth-child(1) {
@@ -213,18 +217,19 @@
         & article:hover {
           scale: 1.05;
           background-color: var(--shape-hover);
-          box-shadow: 0 20px 60px rgba(255, 255, 255, 0.05),
-            0 14px 40px rgba(255, 255, 255, 0.03);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4),
+            0px 5px 60px rgba(255, 255, 255, 0.03),
+            0 0 20px rgba(255, 255, 255, 0.1);
         }
 
         & article:nth-child(1):hover,
         & article:nth-child(2):hover {
           & img:nth-child(5) {
-            transform: rotate(10deg);
+            transform: rotate(20deg);
           }
 
           & img:nth-child(6) {
-            transform: rotate(-10deg);
+            transform: rotate(-20deg);
           }
         }
       }
@@ -250,10 +255,19 @@
   }
 }
 
-@media (width <= 1100px) {
-  #pricing {
-    & .pricing-container .plans {
-      position: static;
+@media (max-width: 768px) {
+  #pricing .plans {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10rem;
+    padding-inline: 1rem;
+    position: static;
+
+    & article {
+      position: relative !important;
+      transform: none !important;
+      flex-shrink: 0;
     }
   }
 }
