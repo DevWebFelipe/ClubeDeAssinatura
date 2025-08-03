@@ -155,6 +155,10 @@
       top: 55%;
       left: 10%;
       transform: rotate(-55deg);
+
+      &:hover {
+        transform: rotate(-80deg);
+      }
     }
 
     img:nth-child(3) {
@@ -163,6 +167,10 @@
       top: 55%;
       left: 80%;
       transform: rotate(20deg);
+
+      &:hover {
+        transform: rotate(35deg);
+      }
     }
   }
 }
