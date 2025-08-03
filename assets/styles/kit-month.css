@@ -40,16 +40,20 @@
     & span,
     & img:nth-child(4),
     & img:nth-child(5),
-    & img:nth-child(6) {
+    & img:nth-child(6),
+    & .book-purple,
+    & .book-yellow,
+    & .book-pin {
       position: absolute;
+
+      transition: transform 600ms cubic-bezier(0.65, -0.6, 0.35, 1.6),
+        top 600ms ease, left 600ms ease, right 600ms ease;
     }
 
     & span:nth-child(1) {
       left: 36.6%;
       top: 20.4%;
       z-index: -1;
-
-      transition: all 500ms ease;
     }
 
     & img:nth-child(5) {
@@ -57,16 +61,12 @@
       top: 28%;
       z-index: -1;
       width: 12.7%;
-
-      transition: all 500ms ease;
     }
 
     & span:nth-child(2) {
       left: 36.6%;
       top: 50.4%;
       z-index: -1;
-
-      transition: all 500ms ease;
     }
 
     & img:nth-child(4) {
@@ -74,16 +74,12 @@
       top: 56%;
       z-index: -1;
       width: 8%;
-
-      transition: all 500ms ease;
     }
 
     & span:nth-child(3) {
       right: 34.2%;
       top: 64%;
       z-index: -1;
-
-      transition: all 500ms ease;
     }
 
     & img:nth-child(6) {
@@ -91,8 +87,6 @@
       top: 40%;
       z-index: -1;
       width: 11%;
-
-      transition: all 500ms ease;
     }
 
     & .book {
@@ -109,25 +103,15 @@
     & .book-yellow {
       width: 12.2%;
       height: 85%;
-
-      position: absolute;
-
       top: 12%;
       left: 54.89%;
-
-      transition: all 500ms ease;
     }
 
     & .book-pin {
       width: 15.3%;
       height: auto;
-
-      position: absolute;
-
       top: 53.15%;
       left: 36.85%;
-
-      transition: all 500ms ease;
     }
 
     & .book-purple {
@@ -153,41 +137,33 @@
       }
 
       & span:nth-child(1) {
-        left: 18.5%;
         top: -9%;
-      }
-
-      & img:nth-child(5) {
-        left: 23.75%;
-        top: -3%;
+        left: 18.5%;
       }
 
       & span:nth-child(2) {
-        left: 20%;
         top: 53.4%;
-
-        transition: all 500ms ease;
-      }
-
-      & img:nth-child(4) {
-        left: 21%;
-        top: 60%;
-
-        transition: all 500ms ease;
+        left: 20%;
       }
 
       & span:nth-child(3) {
-        right: 26.2%;
         top: 115%;
+        right: 26.2%;
+      }
 
-        transition: all 500ms ease;
+      & img:nth-child(5) {
+        top: -3%;
+        left: 23.75%;
+      }
+
+      & img:nth-child(4) {
+        top: 60%;
+        left: 21%;
       }
 
       & img:nth-child(6) {
-        right: 23%;
         top: 90%;
-
-        transition: all 500ms ease;
+        right: 23%;
       }
     }
   }
@@ -217,26 +193,24 @@
       margin-top: 6rem;
     }
 
-    & .images {
-      & span {
-        font-size: 0.75rem;
+    & .images span {
+      font-size: 0.75rem;
+    }
+
+    & .images:hover {
+      & span:nth-child(1) {
+        left: 16.5%;
+        top: -13%;
       }
 
-      &:hover {
-        & span:nth-child(1) {
-          left: 16.5%;
-          top: -13%;
-        }
+      & span:nth-child(2) {
+        left: 18%;
+        top: 49.4%;
+      }
 
-        & span:nth-child(2) {
-          left: 18%;
-          top: 49.4%;
-        }
-
-        & span:nth-child(3) {
-          right: 24.2%;
-          top: 114%;
-        }
+      & span:nth-child(3) {
+        right: 24.2%;
+        top: 114%;
       }
     }
   }
@@ -266,26 +240,24 @@
       margin-top: 4rem;
     }
 
-    & .images {
-      & span {
-        font-size: 0.5rem;
+    & .images span {
+      font-size: 0.5rem;
+    }
+
+    & .images:hover {
+      & span:nth-child(1) {
+        left: 13.5%;
+        top: -16%;
       }
 
-      &:hover {
-        & span:nth-child(1) {
-          left: 13.5%;
-          top: -16%;
-        }
+      & span:nth-child(2) {
+        left: 16%;
+        top: 47.4%;
+      }
 
-        & span:nth-child(2) {
-          left: 16%;
-          top: 47.4%;
-        }
-
-        & span:nth-child(3) {
-          right: 24.2%;
-          top: 114%;
-        }
+      & span:nth-child(3) {
+        right: 24.2%;
+        top: 114%;
       }
     }
   }
