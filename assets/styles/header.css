@@ -1,10 +1,9 @@
 #header {
   background-image: radial-gradient(
     ellipse at center,
-    #11001b6e 40%,
-    #00000073 100%,
-    #2c024273 40%,
-    #00000073 100%
+    #170518d0 30%,
+    #0f000f70 60%,
+    #0000005b 100%
   );
 
   animation: fadeInHeader 3s ease forwards;

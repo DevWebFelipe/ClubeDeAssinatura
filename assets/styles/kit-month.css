@@ -1,13 +1,12 @@
 #kit-month {
   background-image: radial-gradient(
     ellipse at center,
-    #11001b6e 40%,
-    #00000073 100%,
-    #2c024273 40%,
-    #00000073 100%
+    #170518d0 30%,
+    #0f000f70 60%,
+    #0000005b 100%
   );
 
-  padding-bottom: 17.375rem;
+  padding-bottom: 25rem;
 
   & h2 {
     display: flex;
@@ -137,18 +136,18 @@
       }
 
       & span:nth-child(1) {
-        top: -12%;
-        left: 15.5%;
+        top: -10%;
+        left: 18.5%;
       }
 
       & span:nth-child(2) {
-        top: 51.4%;
-        left: 17%;
+        top: 52.4%;
+        left: 20%;
       }
 
       & span:nth-child(3) {
         top: 115%;
-        right: 24.2%;
+        right: 26.2%;
       }
 
       & img:nth-child(5) {
@@ -246,13 +245,13 @@
 
     & .images:hover {
       & span:nth-child(1) {
-        left: 17.5%;
-        top: -12%;
+        left: 15.5%;
+        top: -15%;
       }
 
       & span:nth-child(2) {
-        left: 19%;
-        top: 50.4%;
+        left: 17%;
+        top: 48.4%;
       }
 
       & span:nth-child(3) {

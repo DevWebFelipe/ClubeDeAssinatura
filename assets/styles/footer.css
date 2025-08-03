@@ -1,103 +1,105 @@
 #footer {
-  height: 26rem;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 10rem;
+  background-image: radial-gradient(circle at top, #000714e1 100%);
 
-  background-image: url(../images/book-trace-background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  & .footer-container {
+    height: 26rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10rem;
 
-  background-color: var(--shape-base);
+    background-image: url(../images/book-trace-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 
-  & h4 {
-    color: var(--text-body);
-    margin-bottom: 1.25rem;
-  }
-
-  & .link {
-    color: var(--blue-light);
-
-    &:hover {
+    & h4 {
       color: var(--text-body);
+      margin-bottom: 1.25rem;
     }
-  }
 
-  & .brand {
-    max-width: 16.5rem;
+    & .link {
+      color: var(--blue-light);
 
-    & .social-links {
-      display: flex;
-      justify-content: space-between;
+      &:hover {
+        color: var(--text-body);
+      }
+    }
 
-      & .social-card {
+    & .brand {
+      max-width: 16.5rem;
+
+      & .social-links {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
-        width: 2.5rem;
-        height: 2.5rem;
+        & .social-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        background-color: transparent;
-        background-position: center;
-        background-repeat: no-repeat;
+          width: 2.5rem;
+          height: 2.5rem;
 
-        border-radius: 50%;
-        transition: all 500ms;
+          background-color: transparent;
+          background-position: center;
+          background-repeat: no-repeat;
 
-        &:hover {
-          background-color: var(--shape-stroke);
+          border-radius: 50%;
+          transition: all 500ms;
+
+          &:hover {
+            background-color: var(--shape-stroke);
+          }
         }
-      }
 
-      & .social-card:nth-child(1) {
-        background-image: url(../icons/instagram.svg);
+        & .social-card:nth-child(1) {
+          background-image: url(../icons/instagram.svg);
 
-        &:hover {
-          background-image: url(../icons/instagram-hover.svg);
+          &:hover {
+            background-image: url(../icons/instagram-hover.svg);
+          }
         }
-      }
 
-      & .social-card:nth-child(2) {
-        background-image: url(../icons/twitter.svg);
+        & .social-card:nth-child(2) {
+          background-image: url(../icons/twitter.svg);
 
-        &:hover {
-          background-image: url(../icons/twitter-hover.svg);
+          &:hover {
+            background-image: url(../icons/twitter-hover.svg);
+          }
         }
-      }
 
-      & .social-card:nth-child(3) {
-        background-image: url(../icons/facebook.svg);
+        & .social-card:nth-child(3) {
+          background-image: url(../icons/facebook.svg);
 
-        &:hover {
-          background-image: url(../icons/facebook-hover.svg);
+          &:hover {
+            background-image: url(../icons/facebook-hover.svg);
+          }
         }
-      }
 
-      & .social-card:nth-child(4) {
-        background-image: url(../icons/discord.svg);
+        & .social-card:nth-child(4) {
+          background-image: url(../icons/discord.svg);
 
-        &:hover {
-          background-image: url(../icons/discord-hover.svg);
+          &:hover {
+            background-image: url(../icons/discord-hover.svg);
+          }
         }
-      }
 
-      & .social-card:nth-child(5) {
-        background-image: url(../icons/whatsapp.svg);
+        & .social-card:nth-child(5) {
+          background-image: url(../icons/whatsapp.svg);
 
-        &:hover {
-          background-image: url(../icons/whatsapp-hover.svg);
+          &:hover {
+            background-image: url(../icons/whatsapp-hover.svg);
+          }
         }
-      }
 
-      & .social-card:nth-child(6) {
-        background-image: url(../icons/mail.svg);
+        & .social-card:nth-child(6) {
+          background-image: url(../icons/mail.svg);
 
-        &:hover {
-          background-image: url(../icons/mail-hover.svg);
+          &:hover {
+            background-image: url(../icons/mail-hover.svg);
+          }
         }
       }
     }
