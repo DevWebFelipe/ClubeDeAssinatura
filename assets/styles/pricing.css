@@ -298,14 +298,17 @@
     scroll-snap-align: start;
   }
 
-  #pricing .pricing-container .plans article:nth-child(1) {
-    margin-left: 2rem;
-  }
-
   #pricing .pricing-container .plans article:nth-child(1),
   #pricing .pricing-container .plans article:nth-child(2),
   #pricing .pricing-container .plans article:nth-child(3) {
     left: 0 !important;
     transform: none !important;
+  }
+
+  #pricing .pricing-container .plans article:nth-child(1),
+  #pricing .pricing-container .plans article:nth-child(2) {
+    & > img {
+      display: none;
+    }
   }
 }
