@@ -216,6 +216,17 @@
           box-shadow: 0 20px 60px rgba(255, 255, 255, 0.05),
             0 14px 40px rgba(255, 255, 255, 0.03);
         }
+
+        & article:nth-child(1):hover,
+        & article:nth-child(2):hover {
+          & img:nth-child(5) {
+            transform: rotate(10deg);
+          }
+
+          & img:nth-child(6) {
+            transform: rotate(-10deg);
+          }
+        }
       }
     }
   }
